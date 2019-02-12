@@ -8,7 +8,6 @@ import { GithubService } from '../github.service';
 })
 export class ProfileComponent implements OnInit {
 
-  page = 'Profile';
   user: any;
 
   constructor(private gitHubService: GithubService) {

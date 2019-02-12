@@ -1,6 +1,9 @@
-<header style="background-color: #24292e; color: antiquewhite">
-  <img style=" width: 10%" src="../../assets/logoGit.png"> {{page}}
-</header>
-<div>
-  <h1> {{user.login}} </h1>
+<div class="side">
+  <img class="avatar" src="{{user?.avatar_url}}" alt="">
+  
+  <div id="textoProfile">
+    <h1> {{user?.login}} </h1>
+    <h5 id="bio"> {{user?.bio}} </h5>
+  </div>
+
 </div>
