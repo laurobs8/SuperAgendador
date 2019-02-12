@@ -7,6 +7,7 @@ import { GithubService } from './github.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+  page = 'profiles';
 
   constructor(private gitHubService: GithubService) { }
 
