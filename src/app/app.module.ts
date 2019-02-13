@@ -6,16 +6,20 @@ import { ProfileComponent } from './profile/profile.component';
 import { GithubService } from './github.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { InfoComponent } from './info/info.component';
+import { StarComponent } from './star/star.component';
+import { route } from './rotas';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    InfoComponent
+    InfoComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    route
   ],
   providers: [GithubService, HttpClient],
   bootstrap: [AppComponent]
