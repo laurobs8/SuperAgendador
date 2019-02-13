@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GithubService } from './github.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
