@@ -1,18 +1,11 @@
 <div id="info">
-  Repos
 
   <div class="card" *ngFor="let item of gitInfo">
-    <h3>{{item.name}}</h3>
+    <h3 style="margin: 0">{{item.name}}</h3>
     <p>{{item.description}}</p>
-
     <i class="material-icons">code</i> {{item.language}}
-
     <i class="material-icons">device_hub</i> {{item.forks}}
-
     <hr>
   </div>
-
+  
 </div>
-<!-- <i class="material-icons">
-        star_rate
-        </i> -->
