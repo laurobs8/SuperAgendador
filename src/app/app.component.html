@@ -3,11 +3,13 @@
 </header>
 
 <div class="conteudo">
+  <button routerLink="/repos">Repositorio</button>
+  <button routerLink="/stared">Stared</button>
   <div>
     <app-profile></app-profile>
   </div>
-  <div>
-    <app-info></app-info>
+  <div class="info">
+    <router-outlet></router-outlet>
   </div>
 
 </div>
