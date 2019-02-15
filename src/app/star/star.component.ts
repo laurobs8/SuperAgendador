@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../github.service';
 
 @Component({
   selector: 'app-star',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarComponent implements OnInit {
 
-  constructor() { }
+  star: Array = [];
 
-  ngOnInit() {
+  constructor(private gitHubService: GithubService) {
+    this.gitHubService.getStar().subscribe(
+      star => {
+        this.star = star;
+        console.log(this.star);
+      }
+    );
   }
+  ngOnInit() {
 
+  }
 }

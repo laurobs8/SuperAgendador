@@ -1,3 +1,10 @@
-<p>
-  star works!
-</p>
+<div id="info2">
+  <div class="card" *ngFor="let item of star">
+    <h3>{{item.full_name}}</h3>
+    <p>{{item.description}}</p>
+    <i class="material-icons">device_hub</i> {{item.forks}}
+      <i class="material-icons">star</i>{{item.stargazers_count}}
+    <hr>
+  </div>
+
+</div>
