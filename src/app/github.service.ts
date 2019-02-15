@@ -15,5 +15,8 @@ export class GithubService {
     getRepos() {
         return this.http.get('https://api.github.com/users/' + this.username + '/repos');
     }
-
+    getStar() {
+        return this.http.get('https://api.github.com/users/' + this.username + '/starred');
+    }
+  
 }
